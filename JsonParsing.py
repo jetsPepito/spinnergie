@@ -32,7 +32,8 @@ def modifyJson(js, tab, val, data):
     modifyJson(js, tab, val, newData)
 
 
-def main(jsonFile, changingFile):
+def main(jsonFile, changingFile):  # Json file : The initial json file /// changingFile : The file containing what to
+    # change in the json file.
     with open(changingFile, "r") as changes:
         shutil.copy2(jsonFile, "newJson.json")
         with open("newJson.json", "r+") as js:
