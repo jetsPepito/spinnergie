@@ -46,7 +46,3 @@ def main(jsonFile, changingFile):
         #Closing files
         js.close()
     changes.close()
-
-
-if __name__ == '__main__':
-    main("test.json", "changes")
